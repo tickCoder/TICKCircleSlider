@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24593E931B495CE800E75318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593E921B495CE800E75318 /* main.m */; };
+		24593E961B495CE800E75318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593E951B495CE800E75318 /* AppDelegate.m */; };
+		24593E991B495CE800E75318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593E981B495CE800E75318 /* ViewController.m */; };
+		24593E9C1B495CE800E75318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24593E9A1B495CE800E75318 /* Main.storyboard */; };
+		24593E9E1B495CE800E75318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24593E9D1B495CE800E75318 /* Images.xcassets */; };
+		24593EA11B495CE800E75318 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24593E9F1B495CE800E75318 /* LaunchScreen.xib */; };
+		24593EAD1B495CE800E75318 /* TICKCircleSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593EAC1B495CE800E75318 /* TICKCircleSliderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24593EA71B495CE800E75318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24593E851B495CE800E75318 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24593E8C1B495CE800E75318;
+			remoteInfo = TICKCircleSlider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24593E8D1B495CE800E75318 /* TICKCircleSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TICKCircleSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24593E911B495CE800E75318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24593E921B495CE800E75318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24593E941B495CE800E75318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24593E951B495CE800E75318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24593E971B495CE800E75318 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24593E981B495CE800E75318 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24593E9B1B495CE800E75318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24593E9D1B495CE800E75318 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		24593EA01B495CE800E75318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		24593EA61B495CE800E75318 /* TICKCircleSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TICKCircleSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24593EAB1B495CE800E75318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24593EAC1B495CE800E75318 /* TICKCircleSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TICKCircleSliderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24593E8A1B495CE800E75318 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24593EA31B495CE800E75318 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24593E841B495CE800E75318 = {
+			isa = PBXGroup;
+			children = (
+				24593E8F1B495CE800E75318 /* TICKCircleSlider */,
+				24593EA91B495CE800E75318 /* TICKCircleSliderTests */,
+				24593E8E1B495CE800E75318 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24593E8E1B495CE800E75318 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24593E8D1B495CE800E75318 /* TICKCircleSlider.app */,
+				24593EA61B495CE800E75318 /* TICKCircleSliderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24593E8F1B495CE800E75318 /* TICKCircleSlider */ = {
+			isa = PBXGroup;
+			children = (
+				24593E941B495CE800E75318 /* AppDelegate.h */,
+				24593E951B495CE800E75318 /* AppDelegate.m */,
+				24593E971B495CE800E75318 /* ViewController.h */,
+				24593E981B495CE800E75318 /* ViewController.m */,
+				24593E9A1B495CE800E75318 /* Main.storyboard */,
+				24593E9D1B495CE800E75318 /* Images.xcassets */,
+				24593E9F1B495CE800E75318 /* LaunchScreen.xib */,
+				24593E901B495CE800E75318 /* Supporting Files */,
+			);
+			path = TICKCircleSlider;
+			sourceTree = "<group>";
+		};
+		24593E901B495CE800E75318 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24593E911B495CE800E75318 /* Info.plist */,
+				24593E921B495CE800E75318 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24593EA91B495CE800E75318 /* TICKCircleSliderTests */ = {
+			isa = PBXGroup;
+			children = (
+				24593EAC1B495CE800E75318 /* TICKCircleSliderTests.m */,
+				24593EAA1B495CE800E75318 /* Supporting Files */,
+			);
+			path = TICKCircleSliderTests;
+			sourceTree = "<group>";
+		};
+		24593EAA1B495CE800E75318 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24593EAB1B495CE800E75318 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24593E8C1B495CE800E75318 /* TICKCircleSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24593EB01B495CE800E75318 /* Build configuration list for PBXNativeTarget "TICKCircleSlider" */;
+			buildPhases = (
+				24593E891B495CE800E75318 /* Sources */,
+				24593E8A1B495CE800E75318 /* Frameworks */,
+				24593E8B1B495CE800E75318 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TICKCircleSlider;
+			productName = TICKCircleSlider;
+			productReference = 24593E8D1B495CE800E75318 /* TICKCircleSlider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24593EA51B495CE800E75318 /* TICKCircleSliderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24593EB31B495CE800E75318 /* Build configuration list for PBXNativeTarget "TICKCircleSliderTests" */;
+			buildPhases = (
+				24593EA21B495CE800E75318 /* Sources */,
+				24593EA31B495CE800E75318 /* Frameworks */,
+				24593EA41B495CE800E75318 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24593EA81B495CE800E75318 /* PBXTargetDependency */,
+			);
+			name = TICKCircleSliderTests;
+			productName = TICKCircleSliderTests;
+			productReference = 24593EA61B495CE800E75318 /* TICKCircleSliderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24593E851B495CE800E75318 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Milk;
+				TargetAttributes = {
+					24593E8C1B495CE800E75318 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					24593EA51B495CE800E75318 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 24593E8C1B495CE800E75318;
+					};
+				};
+			};
+			buildConfigurationList = 24593E881B495CE800E75318 /* Build configuration list for PBXProject "TICKCircleSlider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24593E841B495CE800E75318;
+			productRefGroup = 24593E8E1B495CE800E75318 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24593E8C1B495CE800E75318 /* TICKCircleSlider */,
+				24593EA51B495CE800E75318 /* TICKCircleSliderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24593E8B1B495CE800E75318 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24593E9C1B495CE800E75318 /* Main.storyboard in Resources */,
+				24593EA11B495CE800E75318 /* LaunchScreen.xib in Resources */,
+				24593E9E1B495CE800E75318 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24593EA41B495CE800E75318 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24593E891B495CE800E75318 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24593E991B495CE800E75318 /* ViewController.m in Sources */,
+				24593E961B495CE800E75318 /* AppDelegate.m in Sources */,
+				24593E931B495CE800E75318 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24593EA21B495CE800E75318 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24593EAD1B495CE800E75318 /* TICKCircleSliderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24593EA81B495CE800E75318 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24593E8C1B495CE800E75318 /* TICKCircleSlider */;
+			targetProxy = 24593EA71B495CE800E75318 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24593E9A1B495CE800E75318 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24593E9B1B495CE800E75318 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24593E9F1B495CE800E75318 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24593EA01B495CE800E75318 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24593EAE1B495CE800E75318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24593EAF1B495CE800E75318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24593EB11B495CE800E75318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TICKCircleSlider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24593EB21B495CE800E75318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TICKCircleSlider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		24593EB41B495CE800E75318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TICKCircleSliderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TICKCircleSlider.app/TICKCircleSlider";
+			};
+			name = Debug;
+		};
+		24593EB51B495CE800E75318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TICKCircleSliderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TICKCircleSlider.app/TICKCircleSlider";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24593E881B495CE800E75318 /* Build configuration list for PBXProject "TICKCircleSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24593EAE1B495CE800E75318 /* Debug */,
+				24593EAF1B495CE800E75318 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24593EB01B495CE800E75318 /* Build configuration list for PBXNativeTarget "TICKCircleSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24593EB11B495CE800E75318 /* Debug */,
+				24593EB21B495CE800E75318 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		24593EB31B495CE800E75318 /* Build configuration list for PBXNativeTarget "TICKCircleSliderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24593EB41B495CE800E75318 /* Debug */,
+				24593EB51B495CE800E75318 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24593E851B495CE800E75318 /* Project object */;
+}
