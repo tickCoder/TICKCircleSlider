@@ -20,7 +20,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2d-gS-64r" customClass="TICKCircleSlider">
                                 <rect key="frame" x="16" y="74" width="176" height="176"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="176" id="WV6-gT-B0A"/>
                                     <constraint firstAttribute="width" constant="176" id="pC2-jr-oZe"/>

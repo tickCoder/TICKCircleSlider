@@ -17,7 +17,7 @@
 @property (nonatomic, strong) UIBezierPath *valueTrackPath;
 @property (nonatomic, strong) UIBezierPath *backTrackPath;
 @property (nonatomic, strong) UIBezierPath *handlePath;
-\
+
 @end
 
 @implementation TICKCircleSlider
@@ -152,8 +152,10 @@
 {
     // 填写默认属性
     self.translatesAutoresizingMaskIntoConstraints = NO;
+    self.opaque = NO;
+    self.backTrackColor = [UIColor clearColor];
     
-    self.backTrackColor = [UIColor whiteColor];
+    self.backTrackColor = [UIColor grayColor];
     self.valueTrackColor = [UIColor orangeColor];
     self.handleColor = [UIColor blueColor];
     
@@ -171,12 +173,13 @@
     self.showMissedBackTrack = YES;
     self.clockwise = YES;
     
-    self.backTrackWidth = 12;
-    self.valueTrackWidth = 6;
-    self.handleSize = 8;
+    self.backTrackWidth = 10;
+    self.valueTrackWidth = 16;
+    self.handleSize = 20;
     
-    self.startClock = 0;
-    self.endClock = 12;
+    self.startClock = 7;
+    self.endClock = 5;
+    self.clockwise = YES;
     
     self.valueTrackShadowShow = NO;
     self.handleShadowShow = NO;

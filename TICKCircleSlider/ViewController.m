@@ -16,42 +16,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.circleSlider.backgroundColor = [UIColor grayColor];
-    self.circleSlider.opaque = NO;
-    self.circleSlider.value = 10;
-    self.circleSlider.maxValue = 15;
-    self.circleSlider.minValue = 0;
-    
-    self.circleSlider.clockwise = YES;
-    self.circleSlider.startClock = 6.9;
-    self.circleSlider.endClock = 5.1;
-    
-    self.circleSlider.showMissedBackTrack = NO;
-    
-    self.circleSlider.handleSize = 26;
-    self.circleSlider.backTrackWidth = 8;
-    self.circleSlider.valueTrackWidth = 10;
-    self.circleSlider.valueTrackGradient = YES;
-    
-    self.circleSlider.useShapeLayer = NO;
-    
-    self.circleSlider.handleColor = [UIColor redColor];
-    self.circleSlider.backTrackColor = [UIColor whiteColor];
-    self.circleSlider.valueTrackColor = [UIColor orangeColor];
-    [self.circleSlider addTarget:self action:@selector(circleSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
-    
-    self.circleSlider.valueTrackGradientColors = @[[UIColor greenColor], [UIColor blueColor], [UIColor orangeColor]];
-    self.circleSlider.valueTrackGradientLocations = @[@(0.1), @(0.7), @(0.9)];
-    
-    self.circleSlider.valueTrackShadowShow = YES;
-    self.circleSlider.valueTrackShadowBlur = 10;
-    self.circleSlider.valueTrackShadowColor = [UIColor blackColor];
-    self.circleSlider.valueTrackShadowOffset = CGSizeMake(0, 0);
-    
-    self.circleSlider.handleShadowBlur = 10;
-    self.circleSlider.handleShadowShow = YES;
-    self.circleSlider.handleShadowColor = [UIColor purpleColor];
-    self.circleSlider.handleShadowOffset = CGSizeMake(0, 5);
+//    self.circleSlider.backgroundColor = [UIColor grayColor];
+//    self.circleSlider.opaque = NO;
+//    self.circleSlider.value = 10;
+//    self.circleSlider.maxValue = 15;
+//    self.circleSlider.minValue = 0;
+//    
+//    self.circleSlider.clockwise = YES;
+//    self.circleSlider.startClock = 6.9;
+//    self.circleSlider.endClock = 5.1;
+//    
+//    self.circleSlider.showMissedBackTrack = NO;
+//    
+//    self.circleSlider.handleSize = 26;
+//    self.circleSlider.backTrackWidth = 8;
+//    self.circleSlider.valueTrackWidth = 10;
+//    self.circleSlider.valueTrackGradient = YES;
+//    
+//    self.circleSlider.useShapeLayer = NO;
+//    
+//    self.circleSlider.handleColor = [UIColor redColor];
+//    self.circleSlider.backTrackColor = [UIColor whiteColor];
+//    self.circleSlider.valueTrackColor = [UIColor orangeColor];
+//    [self.circleSlider addTarget:self action:@selector(circleSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+//    
+//    self.circleSlider.valueTrackGradientColors = @[[UIColor greenColor], [UIColor blueColor], [UIColor orangeColor]];
+//    self.circleSlider.valueTrackGradientLocations = @[@(0.1), @(0.7), @(0.9)];
+//    
+//    self.circleSlider.valueTrackShadowShow = YES;
+//    self.circleSlider.valueTrackShadowBlur = 10;
+//    self.circleSlider.valueTrackShadowColor = [UIColor blackColor];
+//    self.circleSlider.valueTrackShadowOffset = CGSizeMake(0, 0);
+//    
+//    self.circleSlider.handleShadowBlur = 10;
+//    self.circleSlider.handleShadowShow = YES;
+//    self.circleSlider.handleShadowColor = [UIColor purpleColor];
+//    self.circleSlider.handleShadowOffset = CGSizeMake(0, 5);
 }
 
 - (void)viewDidAppear:(BOOL)animated
