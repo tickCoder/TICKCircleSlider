@@ -14,6 +14,7 @@
 		24593E9E1B495CE800E75318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24593E9D1B495CE800E75318 /* Images.xcassets */; };
 		24593EA11B495CE800E75318 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24593E9F1B495CE800E75318 /* LaunchScreen.xib */; };
 		24593EAD1B495CE800E75318 /* TICKCircleSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593EAC1B495CE800E75318 /* TICKCircleSliderTests.m */; };
+		2C8B089D1B5E117100FE64FF /* TICKCircleSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B089C1B5E117100FE64FF /* TICKCircleSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		24593EA61B495CE800E75318 /* TICKCircleSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TICKCircleSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24593EAB1B495CE800E75318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24593EAC1B495CE800E75318 /* TICKCircleSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TICKCircleSliderTests.m; sourceTree = "<group>"; };
+		24593EB71B495D8000E75318 /* TICKCircleSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICKCircleSlider.h; sourceTree = "<group>"; };
+		2C8B089C1B5E117100FE64FF /* TICKCircleSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICKCircleSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		24593E8F1B495CE800E75318 /* TICKCircleSlider */ = {
 			isa = PBXGroup;
 			children = (
+				24593EB61B495D7000E75318 /* TICKCircleSlider */,
 				24593E941B495CE800E75318 /* AppDelegate.h */,
 				24593E951B495CE800E75318 /* AppDelegate.m */,
 				24593E971B495CE800E75318 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				24593EAB1B495CE800E75318 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24593EB61B495D7000E75318 /* TICKCircleSlider */ = {
+			isa = PBXGroup;
+			children = (
+				24593EB71B495D8000E75318 /* TICKCircleSlider.h */,
+				2C8B089C1B5E117100FE64FF /* TICKCircleSlider.m */,
+			);
+			path = TICKCircleSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8B089D1B5E117100FE64FF /* TICKCircleSlider.m in Sources */,
 				24593E991B495CE800E75318 /* ViewController.m in Sources */,
 				24593E961B495CE800E75318 /* AppDelegate.m in Sources */,
 				24593E931B495CE800E75318 /* main.m in Sources */,
@@ -349,7 +363,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TICKCircleSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +375,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TICKCircleSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +436,7 @@
 				24593EB21B495CE800E75318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24593EB31B495CE800E75318 /* Build configuration list for PBXNativeTarget "TICKCircleSliderTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				24593EB51B495CE800E75318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

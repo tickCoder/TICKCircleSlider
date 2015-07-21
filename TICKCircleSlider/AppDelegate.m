@@ -8,6 +8,30 @@
 
 #import "AppDelegate.h"
 
+@implementation UINavigationController (Private)
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (BOOL)automaticallyAdjustsScrollViewInsets
+{
+    return NO;
+}
+
+@end
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +41,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [application setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
     return YES;
 }
 
@@ -40,6 +65,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end
