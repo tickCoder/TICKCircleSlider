@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController () <UITextFieldDelegate>
+@interface ViewController () <UITextFieldDelegate, TICKCircleSliderDelegate>
 @end
 
 @implementation ViewController
@@ -52,6 +52,12 @@
 //    self.circleSlider.handleShadowShow = YES;
 //    self.circleSlider.handleShadowColor = [UIColor purpleColor];
 //    self.circleSlider.handleShadowOffset = CGSizeMake(0, 5);
+    
+    [self.circleSlider addTarget:self action:@selector(circleSliderValueChangedEnd:) forControlEvents:UIControlEventValueChanged];
+    [self.circleSlider addTarget:self action:@selector(outtouch:) forControlEvents:UIControlEventTouchDragExit];
+    [self.circleSlider addTarget:self action:@selector(endTracking:) forControlEvents:-100];
+    self.circleSlider.delegate = self;
+    self.circleSlider.valueStep = _stepSwitch.isOn;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -127,6 +133,10 @@
     
     [self reloadCircleSliderStatus];
 }
+- (IBAction)stepSwitchChanged:(id)sender {
+    self.circleSlider.valueStep = _stepSwitch.isOn;
+}
+
 - (IBAction)valueSliderValueChanged:(id)sender
 {
     int value = (int)self.valueSlider.value;
@@ -150,9 +160,33 @@
     return YES;
 }
 
-- (void)circleSliderValueChanged:(id)aSender
+- (void)circleSliderValueChanged:(TICKCircleSlider *)aSender
 {
     [self reloadCircleSliderStatus];
 }
+
+- (void)circleSliderValueChangedEnd:(TICKCircleSlider *)aSender {
+    //NSLog(@"end: %d", aSender.value);
+}
+
+- (void)outtouch:(TICKCircleSlider *)aSender {
+    //NSLog(@"outtouch");
+}
+
+- (void)endTracking:(TICKCircleSlider *)aSender {
+    //NSLog(@"endTracking out");
+}
+
+- (void)endChangeOfTickCircleSlider:(TICKCircleSlider *)aSlider {
+    NSLog(@"endChangeOfTickCircleSlider:%d", aSlider.value);
+    //aSlider.userInteractionEnabled = NO;
+    //[self performSelector:@selector(delay) withObject:nil afterDelay:5.0];
+    aSlider;
+}
+
+- (void)delay {
+    //_circleSlider.userInteractionEnabled = YES;
+}
+
 
 @end

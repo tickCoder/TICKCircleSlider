@@ -18,6 +18,8 @@
 @property (nonatomic, strong) UIBezierPath *backTrackPath;
 @property (nonatomic, strong) UIBezierPath *handlePath;
 
+@property (nonatomic, assign) BOOL willReceiveNext;/**<是否接受下一个moveHandleToPoint来改变value*/
+
 @end
 
 @implementation TICKCircleSlider
@@ -124,6 +126,20 @@
 - (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
 {
     [super endTrackingWithTouch:touch withEvent:event];
+    CGPoint tPrePoint = [touch previousLocationInView:self];
+    CGPoint tPont = [touch locationInView:self];
+    if (CGPointEqualToPoint(tPrePoint, tPont)) {
+        return;
+    }
+    [self sendEndChangeEvent];
+}
+
+#pragma mark - Send endChangeEvent
+- (void)sendEndChangeEvent {
+    if (!self.isTracking && _delegate && [_delegate respondsToSelector:@selector(endChangeOfTickCircleSlider:)]) {
+        [_delegate endChangeOfTickCircleSlider:self];
+        self.willReceiveNext = YES;
+    }
 }
 
 #pragma mark - Private
@@ -185,6 +201,7 @@
     self.handleShadowShow = NO;
     
     self.useShapeLayer = NO;
+    self.willReceiveNext = YES;
 }
 
 #pragma mark method0: TODO: useShapeLayer
@@ -505,13 +522,27 @@
     float tAngle = [self tick_angleFromNorthWithCenter:tCircleCenter anyPoint:aPoint];
     NSInteger tValue = roundf([self tick_valueFromAngle:tAngle]);
     
-    // 防止突然跳跃
-    if((tValue>self.value && tValue-self.value<(self.maxValue-self.minValue)/2.0) ||
-       (tValue<self.value && self.value-tValue<(self.maxValue-self.minValue)/2.0))
-    {
-        self.value = tValue;
+    if (self.valueStep) {
+        if (!self.willReceiveNext) {
+            return;
+        }
+        if (tValue > self.value && self.value < self.maxValue) {
+            self.willReceiveNext = NO;
+            self.value = _value + 1;
+            [self sendEndChangeEvent];
+        } else if (tValue < self.value && self.value > self.minValue) {
+            self.willReceiveNext = NO;
+            self.value = _value - 1;
+            [self sendEndChangeEvent];
+        }
+    } else {
+        // 防止突然跳跃
+        if((tValue>self.value && tValue-self.value<(self.maxValue-self.minValue)/2.0) ||
+           (tValue<self.value && self.value-tValue<(self.maxValue-self.minValue)/2.0))
+        {
+            self.value = tValue;
+        }
     }
-    
 }
 
 /*!

@@ -25,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *endClockSlider;
 @property (weak, nonatomic) IBOutlet UISlider *valueSlider;
 @property (weak, nonatomic) IBOutlet UISwitch *showMissedBackTrackSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *stepSwitch;
+- (IBAction)stepSwitchChanged:(id)sender;
 
 - (IBAction)valueSliderValueChanged:(id)sender;
 - (IBAction)startClockSliderValueChanged:(id)sender;

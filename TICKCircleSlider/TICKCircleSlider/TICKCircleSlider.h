@@ -41,7 +41,14 @@
 
 IB_DESIGNABLE
 
+@class TICKCircleSlider;
+@protocol TICKCircleSliderDelegate <NSObject>
+- (void)endChangeOfTickCircleSlider:(TICKCircleSlider *)aSlider;
+@end
+
 @interface TICKCircleSlider : UIControl
+
+@property (nonatomic, weak) id<TICKCircleSliderDelegate> delegate;
 
 @property (nonatomic, strong) IBInspectable UIColor *backTrackColor;
 @property (nonatomic, strong) IBInspectable UIColor *valueTrackColor;
@@ -82,5 +89,8 @@ IB_DESIGNABLE
 
 @property (nonatomic, strong) NSArray *valueTrackGradientColors;
 @property (nonatomic, strong) NSArray *valueTrackGradientLocations;
+
+@property (nonatomic, assign) BOOL valueSticky;/**<是否自动跳到最近的整数值，目前无用，所有value都是整数*/
+@property (nonatomic, assign) BOOL valueStep;/**<是否在每改变一个值就发送一次endChangeOfTickCircleSlider:*/
 
 @end
