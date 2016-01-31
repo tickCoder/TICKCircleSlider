@@ -75,7 +75,7 @@
     _valueSlider.value = _circleSlider.value;
     _valueStepSwitch.on = _circleSlider.valueStep;
     _imageHandleSwitch.on = _circleSlider.handleImage?YES:NO;
-    
+    _gradientTextField.text = [NSString stringWithFormat:@"%d", _circleSlider.valueGradientColors.count];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -163,6 +163,10 @@
                                               [UIColor colorWithRed:0.400 green:1.000 blue:1.000 alpha:1.000],
                                               [UIColor colorWithRed:1.000 green:0.435 blue:0.812 alpha:1.000]];
         _circleSlider.valueGradientLocations = @[@(0), @(0.3), @(0.6), @(1.0)];
+    } else {
+        _circleSlider.valueGradient = NO;
+        _circleSlider.valueGradientColors = nil;
+        _circleSlider.valueGradientLocations = nil;
     }
     _circleSlider.value = _valueSlider.value;
 }

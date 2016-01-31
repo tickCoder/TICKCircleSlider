@@ -16,6 +16,8 @@
 		2C8B089D1B5E117100FE64FF /* TICKCircleSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B089C1B5E117100FE64FF /* TICKCircleSlider.m */; };
 		2EC4005ACD7F76428EA45615 /* libPods-TICKCircleSlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EC8FD53ADAEFF6AD729FFD /* libPods-TICKCircleSlider.a */; };
 		3EBD468F1C527A3800134E93 /* XIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBD468E1C527A3800134E93 /* XIBViewController.m */; };
+		3EC1234B1C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.00.46.GMT+8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC123491C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.00.46.GMT+8.png */; };
+		3EC1234C1C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.30.38.GMT+8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1234A1C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.30.38.GMT+8.png */; };
 		3EDB5F461C4690E000C95981 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDB5F451C4690E000C95981 /* RootTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		2C8B089C1B5E117100FE64FF /* TICKCircleSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICKCircleSlider.m; sourceTree = "<group>"; };
 		3EBD468D1C527A3800134E93 /* XIBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIBViewController.h; sourceTree = "<group>"; };
 		3EBD468E1C527A3800134E93 /* XIBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIBViewController.m; sourceTree = "<group>"; };
+		3EC123491C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.00.46.GMT+8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2016.01.31.Sunday, 20.00.46.GMT+8.png"; sourceTree = "<group>"; };
+		3EC1234A1C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.30.38.GMT+8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2016.01.31.Sunday, 20.30.38.GMT+8.png"; sourceTree = "<group>"; };
 		3EDB5F441C4690E000C95981 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
 		3EDB5F451C4690E000C95981 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		62EC8FD53ADAEFF6AD729FFD /* libPods-TICKCircleSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TICKCircleSlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +102,7 @@
 				24593E941B495CE800E75318 /* AppDelegate.h */,
 				24593E951B495CE800E75318 /* AppDelegate.m */,
 				24593E9A1B495CE800E75318 /* Main.storyboard */,
+				3EC123481C5E361400E3AF5F /* Screenshot */,
 				24593E9D1B495CE800E75318 /* Images.xcassets */,
 				24593E9F1B495CE800E75318 /* LaunchScreen.xib */,
 				24593E901B495CE800E75318 /* Supporting Files */,
@@ -142,6 +147,15 @@
 				2C8B089C1B5E117100FE64FF /* TICKCircleSlider.m */,
 			);
 			path = TICKCircleSlider;
+			sourceTree = "<group>";
+		};
+		3EC123481C5E361400E3AF5F /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				3EC123491C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.00.46.GMT+8.png */,
+				3EC1234A1C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.30.38.GMT+8.png */,
+			);
+			path = Screenshot;
 			sourceTree = "<group>";
 		};
 		67B555F3216CB214749FE25B /* Pods */ = {
@@ -245,8 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24593E9C1B495CE800E75318 /* Main.storyboard in Resources */,
+				3EC1234B1C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.00.46.GMT+8.png in Resources */,
 				24593EA11B495CE800E75318 /* LaunchScreen.xib in Resources */,
 				24593E9E1B495CE800E75318 /* Images.xcassets in Resources */,
+				3EC1234C1C5E361400E3AF5F /* Simulator Screen Shot 2016.01.31.Sunday, 20.30.38.GMT+8.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
