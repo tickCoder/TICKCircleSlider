@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		24593E931B495CE800E75318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593E921B495CE800E75318 /* main.m */; };
 		24593E961B495CE800E75318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593E951B495CE800E75318 /* AppDelegate.m */; };
-		24593E991B495CE800E75318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593E981B495CE800E75318 /* ViewController.m */; };
 		24593E9C1B495CE800E75318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24593E9A1B495CE800E75318 /* Main.storyboard */; };
 		24593E9E1B495CE800E75318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24593E9D1B495CE800E75318 /* Images.xcassets */; };
 		24593EA11B495CE800E75318 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24593E9F1B495CE800E75318 /* LaunchScreen.xib */; };
 		24593EAD1B495CE800E75318 /* TICKCircleSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24593EAC1B495CE800E75318 /* TICKCircleSliderTests.m */; };
 		2C8B089D1B5E117100FE64FF /* TICKCircleSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B089C1B5E117100FE64FF /* TICKCircleSlider.m */; };
+		2EC4005ACD7F76428EA45615 /* libPods-TICKCircleSlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EC8FD53ADAEFF6AD729FFD /* libPods-TICKCircleSlider.a */; };
+		3EBD468F1C527A3800134E93 /* XIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBD468E1C527A3800134E93 /* XIBViewController.m */; };
+		3EDB5F461C4690E000C95981 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDB5F451C4690E000C95981 /* RootTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +35,6 @@
 		24593E921B495CE800E75318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24593E941B495CE800E75318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24593E951B495CE800E75318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		24593E971B495CE800E75318 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		24593E981B495CE800E75318 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		24593E9B1B495CE800E75318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24593E9D1B495CE800E75318 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		24593EA01B495CE800E75318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -43,6 +43,13 @@
 		24593EAC1B495CE800E75318 /* TICKCircleSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TICKCircleSliderTests.m; sourceTree = "<group>"; };
 		24593EB71B495D8000E75318 /* TICKCircleSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICKCircleSlider.h; sourceTree = "<group>"; };
 		2C8B089C1B5E117100FE64FF /* TICKCircleSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICKCircleSlider.m; sourceTree = "<group>"; };
+		3EBD468D1C527A3800134E93 /* XIBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIBViewController.h; sourceTree = "<group>"; };
+		3EBD468E1C527A3800134E93 /* XIBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIBViewController.m; sourceTree = "<group>"; };
+		3EDB5F441C4690E000C95981 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		3EDB5F451C4690E000C95981 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
+		62EC8FD53ADAEFF6AD729FFD /* libPods-TICKCircleSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TICKCircleSlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DD1236CCD0573579E9425C /* Pods-TICKCircleSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICKCircleSlider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TICKCircleSlider/Pods-TICKCircleSlider.debug.xcconfig"; sourceTree = "<group>"; };
+		E4B1D49AD98F56427E0A261C /* Pods-TICKCircleSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICKCircleSlider.release.xcconfig"; path = "Pods/Target Support Files/Pods-TICKCircleSlider/Pods-TICKCircleSlider.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC4005ACD7F76428EA45615 /* libPods-TICKCircleSlider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +77,8 @@
 				24593E8F1B495CE800E75318 /* TICKCircleSlider */,
 				24593EA91B495CE800E75318 /* TICKCircleSliderTests */,
 				24593E8E1B495CE800E75318 /* Products */,
+				67B555F3216CB214749FE25B /* Pods */,
+				B54352BF9694198402D54D92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,12 +97,14 @@
 				24593EB61B495D7000E75318 /* TICKCircleSlider */,
 				24593E941B495CE800E75318 /* AppDelegate.h */,
 				24593E951B495CE800E75318 /* AppDelegate.m */,
-				24593E971B495CE800E75318 /* ViewController.h */,
-				24593E981B495CE800E75318 /* ViewController.m */,
 				24593E9A1B495CE800E75318 /* Main.storyboard */,
 				24593E9D1B495CE800E75318 /* Images.xcassets */,
 				24593E9F1B495CE800E75318 /* LaunchScreen.xib */,
 				24593E901B495CE800E75318 /* Supporting Files */,
+				3EDB5F441C4690E000C95981 /* RootTableViewController.h */,
+				3EDB5F451C4690E000C95981 /* RootTableViewController.m */,
+				3EBD468D1C527A3800134E93 /* XIBViewController.h */,
+				3EBD468E1C527A3800134E93 /* XIBViewController.m */,
 			);
 			path = TICKCircleSlider;
 			sourceTree = "<group>";
@@ -132,6 +144,23 @@
 			path = TICKCircleSlider;
 			sourceTree = "<group>";
 		};
+		67B555F3216CB214749FE25B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9DD1236CCD0573579E9425C /* Pods-TICKCircleSlider.debug.xcconfig */,
+				E4B1D49AD98F56427E0A261C /* Pods-TICKCircleSlider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B54352BF9694198402D54D92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62EC8FD53ADAEFF6AD729FFD /* libPods-TICKCircleSlider.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24593EB01B495CE800E75318 /* Build configuration list for PBXNativeTarget "TICKCircleSlider" */;
 			buildPhases = (
+				F35093B331225ED5A753F6FA /* Check Pods Manifest.lock */,
 				24593E891B495CE800E75318 /* Sources */,
 				24593E8A1B495CE800E75318 /* Frameworks */,
 				24593E8B1B495CE800E75318 /* Resources */,
+				78CD964F92782573626445FB /* Embed Pods Frameworks */,
+				1148FCF22EBB31454615963E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,7 +208,7 @@
 		24593E851B495CE800E75318 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Milk;
 				TargetAttributes = {
 					24593E8C1B495CE800E75318 = {
@@ -227,15 +259,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1148FCF22EBB31454615963E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TICKCircleSlider/Pods-TICKCircleSlider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78CD964F92782573626445FB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TICKCircleSlider/Pods-TICKCircleSlider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F35093B331225ED5A753F6FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24593E891B495CE800E75318 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDB5F461C4690E000C95981 /* RootTableViewController.m in Sources */,
 				2C8B089D1B5E117100FE64FF /* TICKCircleSlider.m in Sources */,
-				24593E991B495CE800E75318 /* ViewController.m in Sources */,
 				24593E961B495CE800E75318 /* AppDelegate.m in Sources */,
 				24593E931B495CE800E75318 /* main.m in Sources */,
+				3EBD468F1C527A3800134E93 /* XIBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +379,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -361,25 +443,31 @@
 		};
 		24593EB11B495CE800E75318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DD1236CCD0573579E9425C /* Pods-TICKCircleSlider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TICKCircleSlider/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tickCoder.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		24593EB21B495CE800E75318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4B1D49AD98F56427E0A261C /* Pods-TICKCircleSlider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TICKCircleSlider/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tickCoder.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -397,6 +485,7 @@
 				);
 				INFOPLIST_FILE = TICKCircleSliderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tickCoder.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TICKCircleSlider.app/TICKCircleSlider";
 			};
@@ -412,6 +501,7 @@
 				);
 				INFOPLIST_FILE = TICKCircleSliderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tickCoder.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TICKCircleSlider.app/TICKCircleSlider";
 			};

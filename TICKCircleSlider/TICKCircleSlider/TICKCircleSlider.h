@@ -7,7 +7,7 @@
 //
 
 /*
- 参考：
+ 参考Reference：
  TB_CircularSlider: https://github.com/ariok/TB_CircularSlider
  PNChart: https://github.com/kevinzhow/PNChart
  VolumeBar: http://code4app.com/ios/Volume-Bar/513180476803fa3845000000
@@ -19,78 +19,153 @@
  使用纯色来渲染
  */
 
-
-//TODO:back阴影选择
-
-//TODO:value使用图片
-//TODO:back使用图片
-
-//TODO:handle渐变颜色自定义
-//TODO:back简便颜色自定义
-
-//TODO:value可以为小数、负数
-//TODO:handle是否选择（即是否为progress）
-//TODO:delegate提供
-//TODO:默认值
-//TODO:动画
-
-//TODO:使用CALayer方式
+//TODO: 阴影设置（back，value，handle），阴影时是否将其大小考虑到radius计算中
+//TODO: 使用图片（back，value，handle），如带渐变颜色的图片
+//TODO: 渐变颜色自定义（back，value，handle）
+//TODO: handle是否可交互（即是否为progress）
+//TODO: 动画优化（尤其是旋转更改大小时）
+//TODO: 使用CALayer方式是否更好
+//TODO: 加入起始点标志
+//TODO: handle遮盖的内容不显示
+//TODO: 起始钟点和结束钟点相同处理(需要考虑越过最大最小值分割点时的处理)
+//TODO: 是否允许最大值后越过分割点变为最大值(目前不允许)
+//TODO: 渐变色沿着路径绘制
+//TODO: __unavailable标示的内容需要完善
+//TODO: 自定义渐变颜色起始结束点
+//TODO: 边角样式自定义
+//TODO: 需要验证其他方式初始化时是否异常
 
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
-
 @class TICKCircleSlider;
 @protocol TICKCircleSliderDelegate <NSObject>
-- (void)endChangeOfTickCircleSlider:(TICKCircleSlider *)aSlider;
+@optional
+/**
+ *  手指离开时或在valueStep时每次一改变就调用，不再继续滑动
+ */
+- (void)endChangingOfTickCircleSlider:(TICKCircleSlider *)aSlider;
+
+/**
+ *  当值改变时（此时设置userInterfaceEnable＝NO后还是可以滑动）
+ */
+- (void)valueChangedOfTICKCircleSlider:(TICKCircleSlider *)aSlider;
 @end
 
+//IB_DESIGNABLE 需要放在@interface前
+IB_DESIGNABLE
 @interface TICKCircleSlider : UIControl
 
 @property (nonatomic, weak) id<TICKCircleSliderDelegate> delegate;
 
-@property (nonatomic, strong) IBInspectable UIColor *backTrackColor;
-@property (nonatomic, strong) IBInspectable UIColor *valueTrackColor;
-@property (nonatomic, strong) IBInspectable UIColor *handleColor;
-
+/**
+ *  最小值，接受负数
+ */
 @property (nonatomic, assign) IBInspectable NSInteger minValue;
+
+/**
+ *  最大值，接受负数
+ */
 @property (nonatomic, assign) IBInspectable NSInteger maxValue;
+
+/**
+ *  当前值，接受负数，需要再最大最小值之间
+ */
 @property (nonatomic, assign) IBInspectable NSInteger value;
 
-@property (nonatomic, strong) IBInspectable UIImage *backTrackImage;
-@property (nonatomic, strong) IBInspectable UIImage *valueTrackImage;
-@property (nonatomic, strong) IBInspectable UIImage *handleImage;
-
-@property (nonatomic, assign) IBInspectable BOOL backTrackGradient;
-@property (nonatomic, assign) IBInspectable BOOL valueTrackGradient;
-
-@property (nonatomic, assign) IBInspectable BOOL showMissedBackTrack;
-@property (nonatomic, assign) IBInspectable BOOL clockwise;
-
-@property (nonatomic, assign) IBInspectable CGFloat backTrackWidth;
-@property (nonatomic, assign) IBInspectable CGFloat valueTrackWidth;
-@property (nonatomic, assign) IBInspectable CGFloat handleSize;
-
+/**
+ *  起始钟点值，如6:30为6.5, 共0-12个小时
+ */
 @property (nonatomic, assign) IBInspectable CGFloat startClock;
+
+/**
+ *  结束钟点值，如4:30为4.5, 共0-12个小时
+ */
 @property (nonatomic, assign) IBInspectable CGFloat endClock;
 
-@property (nonatomic, assign) IBInspectable BOOL valueTrackShadowShow;
-@property (nonatomic, assign) IBInspectable CGSize valueTrackShadowOffset;
-@property (nonatomic, assign) IBInspectable CGFloat valueTrackShadowBlur;
-@property (nonatomic, strong) IBInspectable UIColor *valueTrackShadowColor;
+/**
+ *  滑动方向，顺时针或逆时针
+ */
+@property (nonatomic, assign) IBInspectable BOOL clockwise;
 
-@property (nonatomic, assign) IBInspectable BOOL handleShadowShow;
-@property (nonatomic, assign) IBInspectable CGSize handleShadowOffset;
-@property (nonatomic, assign) IBInspectable CGFloat handleShadowBlur;
-@property (nonatomic, strong) IBInspectable UIColor *handleShadowColor;
+/**
+ *  如果设为yes，则背景环全部显示，否则只显示startClock到endClock之间的背景环
+ */
+@property (nonatomic, assign) IBInspectable BOOL showMissedBack;
 
-@property (nonatomic, assign) IBInspectable BOOL useShapeLayer;
+/**
+ *  背景环颜色，如果设置了背景图片，则此颜色忽略
+ */
+@property (nonatomic, strong) IBInspectable UIColor *backColor;
 
-@property (nonatomic, strong) NSArray *valueTrackGradientColors;
-@property (nonatomic, strong) NSArray *valueTrackGradientLocations;
+/**
+ *  值环颜色，如果设置了值图片，则此颜色忽略
+ */
+@property (nonatomic, strong) IBInspectable UIColor *valueColor;
 
-@property (nonatomic, assign) BOOL valueSticky;/**<是否自动跳到最近的整数值，目前无用，所有value都是整数*/
-@property (nonatomic, assign) BOOL valueStep;/**<是否在每改变一个值就发送一次endChangeOfTickCircleSlider:*/
+/**
+ *  操控点颜色，如果设置了操控点图片，则此颜色忽略
+ */
+@property (nonatomic, strong) IBInspectable UIColor *handleColor;
+
+/**
+ *  背景环图片
+ */
+@property (nonatomic, strong) IBInspectable UIImage *backImage __unavailable;
+
+/**
+ *  值环图片
+ */
+@property (nonatomic, strong) IBInspectable UIImage *valueImage __unavailable;
+
+/**
+ *  操控点图片
+ */
+@property (nonatomic, strong) IBInspectable UIImage *handleImage;
+
+/**
+ *  如果为YES，则背景环使用渐变色，否则使用背景环图片或单一颜色
+ */
+@property (nonatomic, assign) IBInspectable BOOL backGradient __unavailable;
+
+/**
+ *  如果为YES，则值环使用渐变色，否则使用值环图片或单一颜色
+ */
+@property (nonatomic, assign) IBInspectable BOOL valueGradient;
+
+/**
+ *  值环渐变色数组，需要与值环渐变颜色位置数组valueGradientLocations中元素个数相同
+ */
+@property (nonatomic, strong) NSArray <__kindof UIColor*> *valueGradientColors;
+
+/**
+ *  值环渐变色位置数组(CGFloat, 0.0~1.0)，需要与值环渐变颜色数组valueGradientColors中元素个数相同
+ */
+@property (nonatomic, strong) NSArray <__kindof NSNumber*> *valueGradientLocations;
+
+/**
+ *  背景环宽度
+ */
+@property (nonatomic, assign) IBInspectable CGFloat backWidth;
+
+/**
+ *  值环宽度
+ */
+@property (nonatomic, assign) IBInspectable CGFloat valueWidth;
+
+/**
+ *  操控点大小
+ */
+@property (nonatomic, assign) IBInspectable CGFloat handleSize;
+
+/**
+ *  是否使用shapeLayer方式
+ */
+@property (nonatomic, assign) IBInspectable BOOL useShapeLayer __unavailable;
+
+/**
+ *  如果YES，则每次只能递增或递减一个NSInteger值(适合在值改变一个NSInteger后不允许继续滑动的情况)，使用setValue方式无效
+ */
+@property (nonatomic, assign) IBInspectable BOOL valueStep;
 
 @end

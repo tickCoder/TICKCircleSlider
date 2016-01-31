@@ -1,0 +1,13 @@
+PODS:
+  - CMPopTipView (2.2.0)
+  - IQKeyboardManager (3.3.6)
+
+DEPENDENCIES:
+  - CMPopTipView
+  - IQKeyboardManager
+
+SPEC CHECKSUMS:
+  CMPopTipView: a0a88404b9f46a5cfc16ce54bdb1b9bf9acb9aff
+  IQKeyboardManager: 037cf3aec1d0a045108859a47818714eb1bfc149
+
+COCOAPODS: 0.39.0
