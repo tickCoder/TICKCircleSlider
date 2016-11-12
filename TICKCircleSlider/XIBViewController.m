@@ -76,6 +76,7 @@
     _valueStepSwitch.on = _circleSlider.valueStep;
     _imageHandleSwitch.on = _circleSlider.handleImage?YES:NO;
     _gradientTextField.text = [NSString stringWithFormat:@"%d", _circleSlider.valueGradientColors.count];
+    _circleSlider.handleImage = [UIImage imageNamed:@"handle_red"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -152,7 +153,7 @@
     _circleSlider.startClock = tStartClock;
     _circleSlider.endClock = tEndClock;
     if (imageHandle) {
-        _circleSlider.handleImage = [UIImage imageNamed:@"handleImage"];
+        _circleSlider.handleImage = [UIImage imageNamed:@"handle_red"];
     } else {
         _circleSlider.handleImage = nil;
     }
